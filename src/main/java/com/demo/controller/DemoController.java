@@ -13,4 +13,12 @@ public class DemoController {
     public ResponseEntity<String> getDetails(){
         return new ResponseEntity<>("Application is Running !! ", HttpStatus.OK);
     }
+
+    @GetMapping("/get")
+    public ResponseEntity<String> getCurrentDate(){
+
+        return new ResponseEntity<>("Second development !! ", HttpStatus.OK);
+    }
+
+
 }
