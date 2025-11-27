@@ -16,9 +16,15 @@ public class DemoController {
 
     @GetMapping("/get")
     public ResponseEntity<String> getCurrentDate(){
-
         return new ResponseEntity<>("Second development !! ", HttpStatus.OK);
     }
+
+    @GetMapping("/something")
+    public ResponseEntity<String> getSomething(){
+        return new ResponseEntity<>("Something api triggered !! ", HttpStatus.OK);
+    }
+
+
 
 
 }
